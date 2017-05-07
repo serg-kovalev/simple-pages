@@ -1,0 +1,11 @@
+<h2>Available pages</h2>
+<div>
+  <ul>
+    <%- @pages.each do |p| %>
+      <li><%= link_to p.name, page_path(p) %></li>
+    <% end %>
+  </ul>
+</div>
+<div>
+  <%= paginate @pages %>
+</div>
