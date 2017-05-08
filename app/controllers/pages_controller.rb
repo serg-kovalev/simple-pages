@@ -8,3 +8,4 @@ class PagesController < ApplicationController
     render html: @page.body.html_safe, layout: @page.with_layout
   end
 end
+
